@@ -40,10 +40,10 @@ pislave is dependent upon:
 
 ```bash
 sudo apt-get install \
-	libcurl4-openssl-dev \
-	pigpio \ 
-	libsqlite3-dev \
-	cmake
+    ibcurl4-openssl-dev \
+    pigpio \
+    libsqlite3-dev \
+    cmake
 ```
 
 Enabled I2C port: `sudo raspi-config`. Option 5 and enable I2C.
@@ -76,8 +76,10 @@ Afterwards enable and start the service and timer.
 ```bash
 sudo systemctl enable ithowp.service
 sudo systemctl start ithowp.service
+
 sudo systemctl enable ithowp_request.timer
 sudo systemctl start ithowp_request.timer
+
 sudo systemctl enable ithowp_request_counter.timer
 sudo systemctl start ithowp_request_counter.timer
 ```
